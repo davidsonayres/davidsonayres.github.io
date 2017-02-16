@@ -273,3 +273,16 @@ footer {
   font-size: 1.1em;
   margin: 4% 5% auto -2%;
 }
+
+/* link */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:visited {
+  color: #293540;
+  text-decoration: none;
+}
