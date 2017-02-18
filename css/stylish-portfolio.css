@@ -275,14 +275,23 @@ footer {
 }
 
 /* link */
-a#contact_link {
+a#contact_link,
+a#contact_link:visited {
   color: white;
   text-decoration: none;
 }
 
 a#contact_link:hover,
-a#contact_link:active,
-a#contact_link:visited {
+a#contact_link:active {
   color: #293540;
   text-decoration: none;
+}
+
+#invisible {
+  visibility: hidden;
+}
+
+#center_align {
+  display: flex;
+  justify-content: center;
 }
