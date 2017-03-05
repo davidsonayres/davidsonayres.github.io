@@ -1,4 +1,5 @@
-#tile_wrapper {
+#tile_wrapper,
+#tile_wrapper_2 {
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -273,4 +274,13 @@
 .o9,
 .k10 {
   background: linear-gradient(-40deg, #878E94, #5F6870)
+}
+
+#tile_wrapper_2 > div {
+  height: 13%;
+}
+
+#tile_wrapper_2 {
+  height: 80%;
+  display: none;
 }

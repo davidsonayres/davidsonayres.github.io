@@ -169,6 +169,7 @@ hr.small {
 
 .about {
     padding: 50px 0;
+    background-color: #EBECED;
 }
 
 /* Services */
@@ -284,7 +285,7 @@ a#contact_link:visited {
 
 a#contact_link:hover,
 a#contact_link:active {
-  color: #293540;
+  color: #5F6870;
   text-decoration: none;
 }
 
@@ -311,4 +312,22 @@ a#contact_link:active {
 
 .welcome h3 {
   margin-bottom: -10px;
+}
+
+#skills,
+#contact {
+  background-color: #242E38;
+}
+
+#contact {
+  color: white;
+}
+
+#portfolio {
+  background-color: #878E94;
+}
+
+#contact a {
+  text-decoration: none;
+  color: white;
 }
