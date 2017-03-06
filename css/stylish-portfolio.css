@@ -331,3 +331,8 @@ a#contact_link:active {
   text-decoration: none;
   color: white;
 }
+
+img {
+  border: 7px solid white;
+  border-radius: 3px;
+}
