@@ -45,13 +45,13 @@ header {
 
 nav {
   /* border: 1px solid blue; */
-  width: 30%;
+  width: 70%;
   padding: 0.5% 30%;
   font-family: 'Open Sans', sans-serif;
 }
 
 nav h2 {
-  padding-top: 3%;
+  padding-top: 1.5%;
 }
 
 footer {
