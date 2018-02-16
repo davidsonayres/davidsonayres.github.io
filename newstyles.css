@@ -185,11 +185,17 @@ header {
   border-radius: 100%;
   border: 7px solid #A6A6A8;
   overflow: hidden;
+  background: #B1E5F2;
 }
 
 #grid-top img,
 #grid-bottom img {
   height: 100%;
+}
+
+#grid-top img:hover,
+#grid-bottom img:hover {
+  opacity: 0.25;
 }
 
 #label {
