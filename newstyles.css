@@ -23,15 +23,18 @@
 
 html {
   width: 100vw;
-  height: 100vh;
-  position: fixed;
+  height: 100%;
+  /* position: fixed; */
+  background: linear-gradient(#A6A6A8, #CECECE, #E8E9F3, #CECECE);
+  overflow: hidden;
+
 }
 
 body {
   height: 100%;
   width: 100%;
   color: #272635;
-  background: linear-gradient(#A6A6A8, #CECECE, #E8E9F3, #CECECE);
+  overflow: scroll;
 }
 
 a,
@@ -48,15 +51,15 @@ a:active {
   color: #B1E5F2;
 }
 
-/* HOME */
-
-header {
-  height: 30%;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  z-index: -1000;
+#divider {
+  width: 80vw;
+  border: 1px solid #B1E5F2;
+  background: #B1E5F2;
+  height: 10px;
+  margin: 1% 10vw;
 }
+
+/* HOME */
 
 #title {
   margin-top: 17%;
@@ -114,6 +117,89 @@ footer {
 }
 
 /* WEB BUILD PAGE */
+
+header {
+  width: 100vw;
+  top: 0;
+  z-index: -1000;
+}
+
+#webbuild_page #title {
+  margin: 2% 0 0.5%;
+}
+
+#webbuild_page #title h1 {
+  font-size: 2.75em;
+}
+
+#webbuild_page #title h2 {
+  font-size: 2em;
+}
+
+#webbuild_page nav {
+  display: flex;
+  width: 100%;
+  padding: 0 24%;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+#blurb,
+#proof {
+  margin: 3% 8%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#blurb h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#blurb p,
+#proof p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.focus {
+  font-size: 1.2em;
+}
+
+#grid-top,
+#grid-bottom {
+  display: flex;
+  width: 100%;
+  margin: 2% 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#grid-top div,
+#grid-bottom div  {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
+  border: 7px solid #A6A6A8;
+  overflow: hidden;
+}
+
+#grid-top img,
+#grid-bottom img {
+  height: 100%;
+}
+
+#label {
+  display: flex;
+  justify-content: flex-end;
+  margin: -2% 5% 2%;
+}
+
+#label p {
+  font-size: 0.75%;
+}
+
+#webbuild_page footer {
+  position: relative;
+}
 
 /* JS EFFECTS */
 
