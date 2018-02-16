@@ -137,11 +137,16 @@ header {
 }
 
 #webbuild_page nav {
-  display: flex;
   width: 100%;
-  padding: 0 24%;
   justify-content: space-between;
+  padding: 0;
+  text-align: center;
   font-size: 0.8em;
+}
+
+#webbuild_page nav h2 {
+  display: inline;
+  margin: 0 5%;
 }
 
 #blurb,

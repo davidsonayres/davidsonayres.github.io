@@ -17,14 +17,14 @@
     <title>MD // WEBSITE BUILDING</title>
 
   </head>
-  <body id="webbuild_page">
+  <body id="webbuild_page" class="hidden">
     <header>
       <div id="title">
         <a href="index2.html"><h1>MICHAEL DAVIDSON</h1></a>
         <h2>WEB SERVICES</h2>
       </div>
     </header>
-    <nav>
+    <nav class="hidden">
       <a href="webbuilds.html"><h2>WEBSITE BUILDING</h2></a>
       <a href="chatbots.html"><h2>CHATBOTS</h2></a>
       <a href="marketing.html"><h2>FACEBOOK MARKETING</h2></a>
@@ -88,6 +88,18 @@
       <div id="footer-3">
       </div>
     </footer>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $('#webbuild_page').fadeIn(1000);
+      });
+
+      $('header').mouseover(function() {
+        console.log('working!');
+        $('nav').slideDown(500).removeClass('hidden');
+      });
+    </script>
 
   </body>
 </html>
