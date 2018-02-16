@@ -8,6 +8,7 @@
     <meta name="author" content="Michael Davidson">
 
     <link href="newstyles.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
@@ -19,16 +20,16 @@
   <body>
     <header>
     </header>
-    <div id="title">
+    <div id="title" class="hidden">
       <h1>MICHAEL DAVIDSON</h1>
       <h2>WEB SERVICES</h2>
     </div>
-    <nav>
+    <nav class="hidden">
       <h2>WEBSITE BUILDING</h2>
       <h2>CHATBOTS</h2>
       <h2>FACEBOOK MARKETING</h2>
     </nav>
-    <footer>
+    <footer class="hidden">
       <div id="footer-1">
         <i class="fab fa-linkedin fa-3x"></i>
         <i class="fab fa-github-square fa-3x"></i>
@@ -39,5 +40,25 @@
       <div id="footer-3">
       </div>
     </footer>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $('#title').fadeIn(1500).removeClass('hidden');
+      });
+
+      $('#title').mouseover(function() {
+        console.log('working!');
+        $('#title').css('margin-top', '12%');
+        $('#title').css('padding-left', '25%');
+        $('#title').css('text-align', 'left');
+        $('#title h1').css('font-size', '2.75em');
+        $('#title h2').css('font-size', '2em');
+        $('nav').slideDown(500).removeClass('hidden');
+        $('footer').fadeIn(1000).removeClass('hidden');
+      });
+    </script>
+
+
   </body>
 </html>
