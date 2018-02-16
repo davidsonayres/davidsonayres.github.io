@@ -34,6 +34,22 @@ body {
   background: linear-gradient(#A6A6A8, #CECECE, #E8E9F3, #CECECE);
 }
 
+a {
+  color: #272635;
+}
+
+a:hover {
+  color: #A6A6A8;
+}
+
+a:active {
+  color: #B1E5F2;
+}
+
+a:visited {
+  color: #FCFCFC;
+}
+
 /* HOME */
 
 header {
@@ -98,6 +114,8 @@ footer {
 #footer-3 {
   flex-grow: 1.5;
 }
+
+/* WEB BUILD PAGE */
 
 /* JS EFFECTS */
 
