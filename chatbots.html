@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Michael Davidson">
+
+    <link href="newstyles.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat|Open+Sans:400,400i,600" rel="stylesheet">
+
+    <title>MD // CHATBOTS</title>
+
+  </head>
+  <body id="bot_page" class="hidden">
+    <header>
+      <div id="title">
+        <a href="index2.html"><h1>MICHAEL DAVIDSON</h1></a>
+        <h2>WEB SERVICES</h2>
+      </div>
+    </header>
+    <nav class="hidden">
+      <a href="webbuilds.html"><h2>WEBSITE BUILDING</h2></a>
+      <a href="chatbots.html"><h2>CHATBOTS</h2></a>
+      <a href="marketing.html"><h2>FACEBOOK MARKETING</h2></a>
+    </nav>
+
+    <div id="divider"></div>
+
+    <div id="blurb">
+      <h3>CNN, The Wall Street Journal, Katy Perry... <i>and you!?</i></h3></br>
+
+      <p>Chatbots are the next wave of marketing tools being adopted by companies and brands of all sizes to streamline their services - from bots answering frequently asked questions (saving you and your business time and money!) to disseminating fresh content in a fun and timely manner to simply creating a more constant connection to their clients/customers/fans.</p></br>
+      <h2><b>The possibilities with chatbots are <u><i>endless!</i></u></b></h2>
+      <p>You've probably encountered a few already without even knowing it...</p></br>
+
+      <p>I build chatbots with <i><b>personality</b></i> and a <i><b>user-first</b></i> mentality using Chatfuel and its many integrations to connect you and your audience, helping you understand and serve their individual needs better.</p>
+    </div>
+
+      <div id="divider"></div>
+
+    <div id="proof">
+
+      <h2>PROTOTYPES</h2>
+
+      <div class="table">
+        <div class="avatar">
+          <a href="https://chatfuel.com/bot/BlueBot-1749460988457980" target="_blank"><img id="p-1" src="img/bluebot.png"></a>
+        </div>
+        <div id="p-2" class="avatar">
+          <a href="https://chatfuel.com/bot/DaddyBot-136179080533650" target="_blank"><img src="img/daddy.png"></a>
+        </div>
+        <div id="p-3" class="avatar">
+          <a href="https://chatfuel.com/bot/BotFluevog-1426597024113999" target="_blank"><img src="img/botfluevog.png"></a>
+        </div>
+      </div>
+      <div class="table_labels">
+        <div class="t_label"><h2 id="l1">BlueBot</h2></div>
+        <div class="t_label"><h2 id="l2">DaddyBot</h2></div>
+        <div class="t_label"><h2 id="l3">BotFluevog</h2></div>
+      </div>
+
+      <div id="bluebot_blurb" class="bot_about">
+        <p><i>BlueBot</i> was created as a test to see how a quiz on a website might translate to a messenger format. Following the Coffee Match Quiz on Blue Bottle Coffee's website, I tried to capture the vibe of the brand and make the quiz taking experience feel more interactive and fun than a traditional, flat quiz experience.</p></br>
+        <p>This bot includes the coffee match quiz, a subscription/unsubscription sequence, an automated follow-up sequence when the user does not complete the quiz, and an automated follow-up sequence once the quiz has been completed prompting them for feedback on the coffee they were matched with - serving as a reminder/prompt to purchase it if they haven't tried it yet.</p>
+      </div>
+
+      <div id="daddy_blurb" class="bot_about">
+        <p><i>Daddy</i> was created for the romance novelist Kira Blakely as a way to increase as a means of interacting with her fans and giving them more input in the novels she released. This bot was designed as a more playful means of connecting with fans than the traditional email system she was using. Connected to her facebook page and in conjunction with facebook ads, this bot gathered user feedback on book covers and titles through a series of fun quizzes they they were encouraged to complete in exchange for access to exclusive content.</p></br> <p><i>Daddy</i> performed extremely well in increasing customer engagement, with the open rates from messages sent via <i>Daddy</i> vs the traditional email blasts Kira was sending increasing exponentially.</p></br>
+        <p>This bot includes multiple quizzes that gather user feedback and compile them in a google sheet, a subscription/unsubscription sequence, and a fun sidetrack for users filled with saucy gifs, as per her brand. <i>Daddy</i> was also used to announce book releases via broadcast messages sent to all users who had subscribed to its messages. A small amount AI helps maintain the flow of the bot's sequences.</p>
+      </div>
+
+      <div id="botfluevog_blurb" class="bot_about">
+        <p><i>BotFluevog</i> was created to test how an online store might be converted to a messenger format, in which users can browse and buy items directly from messenger. I took inspiration from the website to create the personality and flow of the bot, to add a bit more to the user's shopping experience.</p></br>
+        <p>This bot includes a small directory of items, a subscribe/unsubscribe sequence, and a 'personal stylist' - a quiz matching the user with items they might enjoy based on questions about their taste/style.</p>
+      </div>
+
+    </div>
+
+    </div>
+    <footer>
+      <div id="footer-1">
+        <a href="http://www.linkedin.com/in/davidsonayres" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href="http://www.github.com/davidsonayres" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+      </div>
+      <div id="footer-2">
+        <a href="contact.html"><h2>CONTACT</h2></a>
+      </div>
+      <div id="footer-3">
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $('#bot_page').fadeIn(1000).removeClass('hidden');
+      });
+
+      $('header').mouseover(function() {
+        console.log('working!');
+        $('nav').slideDown(500).removeClass('hidden');
+      });
+
+      $('h2#l1').mouseover(function() {
+        console.log('so working!');
+        $('#bluebot_blurb').slideDown(500);
+        $('#daddy_blurb').slideUp(500);
+        $('#botfluevog_blurb').slideUp(500);
+      });
+
+      $('h2#l2').mouseover(function() {
+        console.log('so working!');
+        $('#daddy_blurb').slideDown(500);
+        $('#bluebot_blurb').slideUp(500);
+        $('#botfluevog_blurb').slideUp(500);
+      });
+
+      $('h2#l3').mouseover(function() {
+        console.log('so working!');
+        $('#botfluevog_blurb').slideDown(500);
+        $('#daddy_blurb').slideUp(500);
+        $('#bluebot_blurb').slideUp(500);
+      });
+
+      $('#proof').mouseleave(function() {
+        console.log('also working!');
+        $('#bluebot_blurb').slideUp(500);
+        $('#daddy_blurb').slideUp(500);
+        $('#botfluevog_blurb').slideUp(500);
+      })
+
+    </script>
+
+  </body>
+</html>
