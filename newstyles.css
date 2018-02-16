@@ -34,8 +34,10 @@ body {
   background: linear-gradient(#A6A6A8, #CECECE, #E8E9F3, #CECECE);
 }
 
-a {
+a,
+a:visited {
   color: #272635;
+  text-decoration: none;
 }
 
 a:hover {
@@ -44,10 +46,6 @@ a:hover {
 
 a:active {
   color: #B1E5F2;
-}
-
-a:visited {
-  color: #FCFCFC;
 }
 
 /* HOME */
