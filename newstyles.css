@@ -125,22 +125,26 @@ header {
 }
 
 #webbuild_page #title,
-#bot_page #title {
+#bot_page #title,
+#marketing_page #title {
   margin: 2% 0 0.5%;
 }
 
 #webbuild_page #title h1,
-#bot_page #title h1 {
+#bot_page #title h1,
+#marketing_page #title h1 {
   font-size: 2.75em;
 }
 
 #webbuild_page #title h2,
-#bot_page #title h2 {
+#bot_page #title h2,
+#marketing_page #title h2 {
   font-size: 2em;
 }
 
 #webbuild_page nav,
-#bot_page nav {
+#bot_page nav,
+#marketing_page nav {
   width: 100%;
   justify-content: space-between;
   padding: 0;
@@ -149,7 +153,8 @@ header {
 }
 
 #webbuild_page nav h2,
-#bot_page nav h2 {
+#bot_page nav h2,
+#marketing_page nav h2 {
   display: inline;
   margin: 0 5%;
 }
@@ -165,6 +170,10 @@ header {
   font-family: 'Open Sans', sans-serif;
 }
 
+#blurb h1 {
+  text-align: center;
+}
+
 #blurb h2,
 #blurb h3 {
   font-family: 'Montserrat', sans-serif;
@@ -177,7 +186,7 @@ header {
   text-align: center;
 }
 
-.focus {
+#blurb .focus {
   font-size: 1.2em;
 }
 
@@ -241,6 +250,7 @@ header {
 
 .avatar img {
   width: 100%;
+  height: 100%;
   z-index: 10000;
 }
 
@@ -267,6 +277,13 @@ header {
 #daddy_blurb,
 #botfluevog_blurb {
   display: none;
+}
+
+/* MARKETING PAGE */
+
+#marketing_page footer {
+  position: absolute;
+  bottom: 0;
 }
 
 
