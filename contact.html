@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Michael Davidson">
+
+    <link href="newstyles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat|Open+Sans:400,400i,600" rel="stylesheet">
+
+    <title>MD // CONTACT</title>
+
+  </head>
+  <body id="contact_page" class="hidden">
+    <header>
+      <div id="title">
+        <a href="index2.html"><h1>MICHAEL DAVIDSON</h1></a>
+        <h2>WEB SERVICES</h2>
+      </div>
+    </header>
+    <nav class="hidden">
+      <a href="webbuilds.html"><h2>WEBSITE BUILDING</h2></a>
+      <a href="chatbots.html"><h2>CHATBOTS</h2></a>
+      <a href="marketing.html"><h2>FACEBOOK MARKETING</h2></a>
+    </nav>
+
+    <div id="divider"></div>
+
+    <div id="blurb">
+
+    <form id="contact-form" name="contactform" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSfe0xzQ2ZLQM8a_mGn2Hlo5-tLTGOV5DnnqAVng6qYUMT0gfw/formResponse?" target="hidden_iframe" onsubmit="submitted=true">
+
+      <h1>Let's work together.</h1>
+
+      <input class="form_input" type="text" name="entry.361604399" maxlength="50" placeholder="NAME" required>
+      <input class="form_input" type="email" name="entry.182715093" maxlength="80" placeholder="EMAIL" required>
+      <textarea class="form_input" name="entry.1146789119" maxlength="3000" cols="25" rows="10" placeholder="MESSAGE" required></textarea>
+      <input type="submit" value="SEND">
+    </form>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+   </div>
+
+   <h1 id="send_confirm" class='hidden'>Thanks for reaching out, I'll be in touch shortly!</h1>
+
+    <div id="divider"></div>
+
+    <footer>
+      <div id="footer-1">
+        <a href="http://www.linkedin.com/in/davidsonayres" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href="http://www.github.com/davidsonayres" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+      </div>
+      <div id="footer-2">
+        <a href="contact.html"><h2>CONTACT</h2></a>
+      </div>
+      <div id="footer-3">
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $('#contact_page').fadeIn(1000);
+      });
+
+      $('header').mouseover(function() {
+        console.log('working!');
+        $('nav').slideDown(500).removeClass('hidden');
+      });
+
+      $('#contact-form').on('submit', function(e) {
+        $('#contact-form *').fadeOut(500);
+        setTimeout(function() {
+          $('#send_confirm').slideDown(500).removeClass('hidden');
+        }, 350);
+      });
+
+    </script>
+
+  </body>
+</html>

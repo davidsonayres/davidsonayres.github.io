@@ -19,6 +19,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 html {
@@ -126,25 +127,29 @@ header {
 
 #webbuild_page #title,
 #bot_page #title,
-#marketing_page #title {
+#marketing_page #title,
+#contact_page #title {
   margin: 2% 0 0.5%;
 }
 
 #webbuild_page #title h1,
 #bot_page #title h1,
-#marketing_page #title h1 {
+#marketing_page #title h1,
+#contact_page #title h1 {
   font-size: 2.75em;
 }
 
 #webbuild_page #title h2,
 #bot_page #title h2,
-#marketing_page #title h2 {
+#marketing_page #title h2,
+#contact_page #title h2 {
   font-size: 2em;
 }
 
 #webbuild_page nav,
 #bot_page nav,
-#marketing_page nav {
+#marketing_page nav,
+#contact_page nav {
   width: 100%;
   justify-content: space-between;
   padding: 0;
@@ -154,13 +159,15 @@ header {
 
 #webbuild_page nav h2,
 #bot_page nav h2,
-#marketing_page nav h2 {
+#marketing_page nav h2,
+#contact_page nav h2 {
   display: inline;
   margin: 0 5%;
 }
 
 #webbuild_page footer,
-#bot_page footer {
+#bot_page footer,
+#contact_page footer {
   position: relative;
 }
 
@@ -279,13 +286,47 @@ header {
   display: none;
 }
 
-/* MARKETING PAGE */
+/* CONTACT PAGE */
 
-#marketing_page footer {
-  position: absolute;
-  bottom: 0;
+form {
+  text-align: center;
 }
 
+form input,
+form textarea {
+  display: block;
+  margin: 1% auto;
+  width: 45%;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.4%;
+  border: 1px solid #E8E9F3;
+  box-shadow: 3px 3px #A6A6A8;
+}
+
+form input:nth-of-type(3) {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2em;
+  width: 30%;
+}
+
+form input:nth-of-type(3):hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+form input:nth-of-type(3):active {
+  background: #B1E5F2;
+  color: #E8E9F3;
+  border: 1px solid #B1E5F2;
+}
+
+#send_confirm {
+  margin: 5%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
 
 /* JS EFFECTS */
 
