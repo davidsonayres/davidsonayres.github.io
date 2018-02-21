@@ -328,6 +328,15 @@ form input:nth-of-type(3):active {
   font-family: 'Montserrat', sans-serif;
 }
 
+#contact_page #footer-2 {
+  justify-content: space-around;
+}
+
+#contact_page #footer-1,
+#contact_page #footer-3 {
+  flex-grow: 3;
+}
+
 /* JS EFFECTS */
 
 .hidden {
