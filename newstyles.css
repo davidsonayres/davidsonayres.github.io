@@ -497,6 +497,13 @@ form input:nth-of-type(3):active {
     font-size: 1em;
   }
 
+  #webbuild_page nav h2,
+  #bot_page nav h2,
+  #marketing_page nav h2,
+  #contact_page nav h2 {
+    display: block;
+  }
+
   /* WEB BUILD PAGE */
 
   #grid-top div,
@@ -608,6 +615,13 @@ form input:nth-of-type(3):active {
     #marketing_page nav,
     #contact_page nav {
       font-size: 1em;
+    }
+
+    #webbuild_page nav h2,
+    #bot_page nav h2,
+    #marketing_page nav h2,
+    #contact_page nav h2 {
+      display: block;
     }
 
     /* WEB BUILD PAGE */
