@@ -56,7 +56,9 @@
         $('#divider-live').css('animation-delay', '0s');
         $('#divider-live').css('animation-name', 'flyout');
         $('#divider-live').css('animation-play-state', 'running');
-        $('#title').fadeOut(1000);
+        setTimeout(function() {
+          $('#title').fadeOut(1000);
+        }, 10);
 
         $('#divider-live').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
           console.log('finished again!')
