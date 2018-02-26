@@ -417,3 +417,247 @@ form input:nth-of-type(3):active {
 .hidden {
   display: none;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width:1024px) and (max-width:1279px) {
+
+  .avatar {
+    width: 30vh;
+    height: 30vh;
+  }
+
+  .bot_about {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width:750px) and (max-width:1023px) {
+
+  .avatar {
+    width: 24vh;
+    height: 24vh;
+  }
+
+  .bot_about {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width:375px) and (max-width:749px) {
+
+  #title h1 {
+    font-size: 2.75em;
+  }
+
+  #title h2 {
+    font-size: 2em;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav h2 {
+    font-size: 1.25em;
+  }
+
+  #footer-1 {
+    flex-grow: 1;
+  }
+
+  #footer-2 {
+    justify-content: flex-end;
+    padding-right: 18vw;
+    flex-grow: 1;
+  }
+
+  #footer-3 {
+    display: none;
+  }
+
+  #webbuild_page #title h1,
+  #bot_page #title h1,
+  #marketing_page #title h1,
+  #contact_page #title h1 {
+    font-size: 1.75em;
+  }
+
+  #webbuild_page #title h2,
+  #bot_page #title h2,
+  #marketing_page #title h2,
+  #contact_page #title h2 {
+    font-size: 1.8em;
+  }
+
+  #webbuild_page nav,
+  #bot_page nav,
+  #marketing_page nav,
+  #contact_page nav {
+    font-size: 1em;
+  }
+
+  /* WEB BUILD PAGE */
+
+  #grid-top div,
+  #grid-bottom div  {
+    width: 27vw;
+    height: 27vw;
+  }
+
+  /* BOT PAGE */
+
+  .avatar {
+    width: 26vw;
+    height: 26vw;
+  }
+
+  .t_label h2 {
+    font-size: 1em;
+    margin-top: 2vh;
+  }
+
+  /* MARKETING PAGE */
+
+  #marketing_page footer {
+    position: relative;
+  }
+
+  /* CONTACT PAGE */
+
+  form input,
+  form textarea {
+    width: 80%;
+  }
+
+  form input:nth-of-type(3) {
+    width: 50%;
+  }
+
+  #contact_page #footer-3 {
+    display: inline;
+  }
+
+  #contact_page #footer-1,
+  #contact_page #footer-3 {
+    flex-grow: 3;
+  }
+
+  #contact_page #footer-2 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width:374px) {
+
+
+    #title h1 {
+      font-size: 2.5em;
+    }
+
+    #title h2 {
+      font-size: 2em;
+    }
+
+    #title-moved h1 {
+      font-size: 2em;
+    }
+
+    #title-moved h2 {
+      font-size: 1.5em;
+    }
+
+    nav {
+      width: 100%;
+    }
+
+    nav h2 {
+      font-size: 1.25em;
+    }
+
+    #footer-1 {
+      flex-grow: 1;
+    }
+
+    #footer-2 {
+      justify-content: flex-end;
+      padding-right: 18vw;
+      flex-grow: 1;
+    }
+
+    #footer-3 {
+      display: none;
+    }
+
+    #webbuild_page #title h1,
+    #bot_page #title h1,
+    #marketing_page #title h1,
+    #contact_page #title h1 {
+      font-size: 1.75em;
+    }
+
+    #webbuild_page #title h2,
+    #bot_page #title h2,
+    #marketing_page #title h2,
+    #contact_page #title h2 {
+      font-size: 1.8em;
+    }
+
+    #webbuild_page nav,
+    #bot_page nav,
+    #marketing_page nav,
+    #contact_page nav {
+      font-size: 1em;
+    }
+
+    /* WEB BUILD PAGE */
+
+    #grid-top div,
+    #grid-bottom div  {
+      width: 27vw;
+      height: 27vw;
+    }
+
+    /* BOT PAGE */
+
+    .avatar {
+      width: 26vw;
+      height: 26vw;
+    }
+
+    .t_label h2 {
+      font-size: 1em;
+      margin-top: 2vh;
+    }
+
+    /* MARKETING PAGE */
+
+    #marketing_page footer {
+      position: relative;
+    }
+
+    /* CONTACT PAGE */
+
+    form input,
+    form textarea {
+      width: 90%;
+    }
+
+    form input:nth-of-type(3) {
+      width: 50%;
+    }
+
+    #contact_page #footer-3 {
+      display: inline;
+    }
+
+    #contact_page #footer-1,
+    #contact_page #footer-3 {
+      flex-grow: 3;
+    }
+
+    #contact_page #footer-2 {
+      padding: 0;
+    }
+  }
+}
