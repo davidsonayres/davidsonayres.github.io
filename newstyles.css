@@ -52,12 +52,63 @@ a:active {
   color: #B1E5F2;
 }
 
+@keyframes flyin1 {
+  0% {
+    width: 150vw;
+    margin: 1% 100vw;
+  }
+  85% {
+    width: 150vw;
+    margin: 1% 10vw;
+  }
+  100% {
+    width: 80vw;
+    margin: 1% 10vw;
+  }
+}
+
+@keyframes flyout {
+  0% {
+    margin: 1% 10vw;
+  }
+  15% {
+    margin-left: 20vw;
+  }
+  100% {
+    margin-left: -100vw;
+  }
+}
+
+@keyframes flyin2 {
+  0% {
+    margin: 1% 100vw;
+  }
+  50% {
+    margin: 1% 100vw;
+  }
+  100% {
+    margin: 1% 0vw;
+  }
+}
+
 #divider {
   width: 80vw;
   border: 1px solid #B1E5F2;
   background: #B1E5F2;
   height: 10px;
-  margin: 1% 10vw;
+  margin: 1% 100vw;
+  animation-name: flyin1;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+}
+
+#divider-moved {
+  width: 80vw;
+  border: 1px solid #B1E5F2;
+  background: #B1E5F2;
+  height: 10px;
+  margin: 1% 0vw;
 }
 
 /* HOME */
@@ -74,6 +125,22 @@ a:active {
 
 #title h2 {
   font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#title-moved {
+  margin-top: 12%;
+  text-align: left;
+  padding-left: 25%;
+}
+
+#title-moved h1 {
+  font-size: 2.75em;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+#title-moved h2 {
+  font-size: 2em;
   font-family: 'Montserrat', sans-serif;
 }
 

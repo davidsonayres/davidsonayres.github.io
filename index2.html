@@ -42,20 +42,53 @@
     <script type="text/javascript">
 
       $(document).ready(function(){
-        $('#title').fadeIn(1500).removeClass('hidden');
+        $('#title').fadeIn(1000).removeClass('hidden');
+      });
+
+      $('#divider').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+        console.log('finished!')
+        $('#divider').css('margin', '1% 10vw');
+        $('#divider').css('animation-delay', '0');
       });
 
       $('#title').mouseover(function() {
         console.log('working!');
-        $('#title').css('margin-top', '12%');
-        $('#title').css('padding-left', '25%');
-        $('#title').css('text-align', 'left');
-        $('#title h1').css('font-size', '2.75em');
-        $('#title h2').css('font-size', '2em');
-        $('#divider').css('margin', '1% 0');
-        $('nav').slideDown(500).removeClass('hidden');
-        $('footer').fadeIn(1000).removeClass('hidden');
+        $('#divider').css('animation-delay', '0s');
+        $('#divider').css('animation-name', 'flyout');
+        $('#divider').css('animation-play-state', 'running');
+        $('#title').fadeOut(1000);
+
+        $('#divider').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+          console.log('finished again!')
+          $('#divider').css('margin', '1% -120vw');
+          $('#divider').css('animation-name', 'flyin2');
+          $('#divider').css('animation-duration', '1.5s');
+          $('#divider').css('animation-play-state', 'running');
+          $('#divider').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+            $('#divider').css('margin', '1% 0vw');
+            $('#divider').attr('id', 'divider-moved');
+          });
+        });
+
+        $('#title').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+          console.log('we finished.');
+          setTimeout(function() {
+            $('#title').css('margin-top', '12%');
+            $('#title').css('padding-left', '25%');
+            $('#title').css('text-align', 'left');
+            $('#title h1').css('font-size', '2.75em');
+            $('#title h2').css('font-size', '2em');
+          }, 100);
+          $('#title').fadeIn(1000);
+          setTimeout(function() {
+            $('#title').attr('id', 'title-moved');
+          }, 100);
+          $('nav').slideDown(500).removeClass('hidden');
+          $('footer').fadeIn(1000).removeClass('hidden');
+        });
+
       });
+
     </script>
 
   </body>
