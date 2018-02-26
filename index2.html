@@ -19,7 +19,7 @@
   <body>
     <div id="title" class="hidden">
       <h1>MICHAEL DAVIDSON</h1>
-      <div id="divider"></div>
+      <div id="divider-live"></div>
       <h2>WEB SERVICES</h2>
     </div>
     <nav class="hidden">
@@ -45,28 +45,28 @@
         $('#title').fadeIn(1000).removeClass('hidden');
       });
 
-      $('#divider').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+      $('#divider-live').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
         console.log('finished!')
-        $('#divider').css('margin', '1% 10vw');
-        $('#divider').css('animation-delay', '0');
+        $('#divider-live').css('margin', '1% 10vw');
+        $('#divider-live').css('animation-delay', '0');
       });
 
-      $('#title').mouseover(function() {
+      $('#title').mouseenter(function() {
         console.log('working!');
-        $('#divider').css('animation-delay', '0s');
-        $('#divider').css('animation-name', 'flyout');
-        $('#divider').css('animation-play-state', 'running');
+        $('#divider-live').css('animation-delay', '0s');
+        $('#divider-live').css('animation-name', 'flyout');
+        $('#divider-live').css('animation-play-state', 'running');
         $('#title').fadeOut(1000);
 
-        $('#divider').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+        $('#divider-live').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
           console.log('finished again!')
-          $('#divider').css('margin', '1% -120vw');
-          $('#divider').css('animation-name', 'flyin2');
-          $('#divider').css('animation-duration', '1.5s');
-          $('#divider').css('animation-play-state', 'running');
-          $('#divider').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
-            $('#divider').css('margin', '1% 0vw');
-            $('#divider').attr('id', 'divider-moved');
+          $('#divider-live').css('margin', '1% -120vw');
+          $('#divider-live').css('animation-name', 'flyin2');
+          $('#divider-live').css('animation-duration', '1.5s');
+          $('#divider-live').css('animation-play-state', 'running');
+          $('#divider-live').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+            $('#divider-live').css('margin', '1% 0vw');
+            $('#divider-live').attr('id', 'divider-moved');
           });
         });
 
@@ -78,12 +78,12 @@
             $('#title').css('text-align', 'left');
             $('#title h1').css('font-size', '2.75em');
             $('#title h2').css('font-size', '2em');
-          }, 100);
-          $('#title').fadeIn(1000);
+            $('#title').fadeIn(1000);
+          }, 200);
           setTimeout(function() {
             $('#title').attr('id', 'title-moved');
-          }, 100);
-          $('nav').slideDown(500).removeClass('hidden');
+            $('nav').slideDown(500).removeClass('hidden');
+          }, 1000);
           $('footer').fadeIn(1000).removeClass('hidden');
         });
 

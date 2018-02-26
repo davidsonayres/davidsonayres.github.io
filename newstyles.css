@@ -91,7 +91,7 @@ a:active {
   }
 }
 
-#divider {
+#divider-live {
   width: 80vw;
   border: 1px solid #B1E5F2;
   background: #B1E5F2;
@@ -190,6 +190,14 @@ header {
   width: 100vw;
   top: 0;
   z-index: -1000;
+}
+
+#divider {
+  width: 80vw;
+  border: 1px solid #B1E5F2;
+  background: #B1E5F2;
+  height: 10px;
+  margin: 1% 10vw;
 }
 
 #webbuild_page #title,
