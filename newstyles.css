@@ -247,7 +247,8 @@ header {
 }
 
 #blurb,
-#proof {
+#proof,
+#skills {
   margin: 3% 8%;
   font-family: 'Open Sans', sans-serif;
 }
@@ -311,6 +312,28 @@ header {
 
 #label p {
   font-size: 0.75%;
+}
+
+#skill-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 10vw;
+  font-size: 4em;
+  text-align: center;
+}
+
+.skill-item h4 {
+  /* margin: 2vh 0; */
+  text-align: center;
+  font-size: 0.2em;
 }
 
 /* BOT PAGE */
