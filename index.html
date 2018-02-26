@@ -1,671 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+  <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Michael Davidson">
 
-    <title>Michael Davidson | Full Stack Web Developer</title>
+    <link href="newstyles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <!-- Tiles CSS -->
-    <link href="css/tiles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat|Open+Sans:400,400i,600" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>MICHAEL DAVIDSON // WEB SERVICES</title>
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Fizzed Icons -->
-    <link rel="stylesheet" href="font-mfizz-2.4.1/font-mfizz.css">
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>MICHAEL DAVIDSON</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#skills" onclick=$("#menu-close").click();>Skills</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
+  </head>
+  <body>
+    <div id="title" class="hidden">
+      <h1>MICHAEL DAVIDSON</h1>
+      <div id="divider-live"></div>
+      <h2>WEB SERVICES</h2>
+    </div>
+    <nav class="hidden">
+      <a href="webbuilds.html"><h2>WEBSITE BUILDING</h2></a>
+      <a href="chatbots.html"><h2>CHATBOTS</h2></a>
+      <a href="marketing.html"><h2>FACEBOOK MARKETING</h2></a>
     </nav>
-
-    <!-- Header -->
-    <header id="top" class="header">
-      <div class="welcome">
-          <h1>MICHAEL DAVIDSON</h1>
-          <h3>FULL STACK WEB DEVELOPER</h3>
-          <br>
-          <a href="#about" class="btn btn-dark btn-lg"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+    <footer class="hidden">
+      <div id="footer-1">
+        <a href="http://www.linkedin.com/in/davidsonayres" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href="http://www.github.com/davidsonayres" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
       </div>
-        <div id="tile_wrapper">
-          <div class="tile a1"></div>
-          <div class="tile b1"></div>
-          <div class="tile c1"></div>
-          <div class="tile d1"></div>
-          <div class="tile e1"></div>
-          <div class="tile f1"></div>
-          <div class="tile g1"></div>
-          <div class="tile h11"></div>
-          <div class="tile i1"></div>
-          <div class="tile j1"></div>
-          <div class="tile k1"></div>
-          <div class="tile l1"></div>
-          <div class="tile m1"></div>
-          <div class="tile n1"></div>
-          <div class="tile o1"></div>
-          <div class="tile p1"></div>
-          <div class="tile q1"></div>
-          <div class="tile r1"></div>
-          <div class="tile s1"></div>
-          <div class="tile t1"></div>
-          <div class="tile a2"></div>
-          <div class="tile b2"></div>
-          <div class="tile c2"></div>
-          <div class="tile d2"></div>
-          <div class="tile e2"></div>
-          <div class="tile f2"></div>
-          <div class="tile g2"></div>
-          <div class="tile h22"></div>
-          <div class="tile i2"></div>
-          <div class="tile j2"></div>
-          <div class="tile k2"></div>
-          <div class="tile l2"></div>
-          <div class="tile m2"></div>
-          <div class="tile n2"></div>
-          <div class="tile o2"></div>
-          <div class="tile p2"></div>
-          <div class="tile q2"></div>
-          <div class="tile r2"></div>
-          <div class="tile s2"></div>
-          <div class="tile t2"></div>
-          <div class="tile a3"></div>
-          <div class="tile b3"></div>
-          <div class="tile c3"></div>
-          <div class="tile d3"></div>
-          <div class="tile e3"></div>
-          <div class="tile f3"></div>
-          <div class="tile g3"></div>
-          <div class="tile h33"></div>
-          <div class="tile i3"></div>
-          <div class="tile j3"></div>
-          <div class="tile k3"></div>
-          <div class="tile l3"></div>
-          <div class="tile m3"></div>
-          <div class="tile n3"></div>
-          <div class="tile o3"></div>
-          <div class="tile p3"></div>
-          <div class="tile q3"></div>
-          <div class="tile r3"></div>
-          <div class="tile s3"></div>
-          <div class="tile t3"></div>
-          <div class="tile a4"></div>
-          <div class="tile b4"></div>
-          <div class="tile c4"></div>
-          <div class="tile d4"></div>
-          <div class="tile e4"></div>
-          <div class="tile f4"></div>
-          <div class="tile g4"></div>
-          <div class="tile h44"></div>
-          <div class="tile i4"></div>
-          <div class="tile j4"></div>
-          <div class="tile k4"></div>
-          <div class="tile l4"></div>
-          <div class="tile m4"></div>
-          <div class="tile n4"></div>
-          <div class="tile o4"></div>
-          <div class="tile p4"></div>
-          <div class="tile q4"></div>
-          <div class="tile r4"></div>
-          <div class="tile s4"></div>
-          <div class="tile t4"></div>
-          <div class="tile a5"></div>
-          <div class="tile b5"></div>
-          <div class="tile c5"></div>
-          <div class="tile d5"></div>
-          <div class="tile e5"></div>
-          <div class="tile f5"></div>
-          <div class="tile g5"></div>
-          <div class="tile h55"></div>
-          <div class="tile i5"></div>
-          <div class="tile j5"></div>
-          <div class="tile k5"></div>
-          <div class="tile l5"></div>
-          <div class="tile m5"></div>
-          <div class="tile n5"></div>
-          <div class="tile o5"></div>
-          <div class="tile p5"></div>
-          <div class="tile q5"></div>
-          <div class="tile r5"></div>
-          <div class="tile s5"></div>
-          <div class="tile t5"></div>
-          <div class="tile a6"></div>
-          <div class="tile b6"></div>
-          <div class="tile c6"></div>
-          <div class="tile d6"></div>
-          <div class="tile e6"></div>
-          <div class="tile f6"></div>
-          <div class="tile g6"></div>
-          <div class="tile h66"></div>
-          <div class="tile i6"></div>
-          <div class="tile j6"></div>
-          <div class="tile k6"></div>
-          <div class="tile l6"></div>
-          <div class="tile m6"></div>
-          <div class="tile n6"></div>
-          <div class="tile o6"></div>
-          <div class="tile p6"></div>
-          <div class="tile q6"></div>
-          <div class="tile r6"></div>
-          <div class="tile s6"></div>
-          <div class="tile t6"></div>
-          <div class="tile a7"></div>
-          <div class="tile b7"></div>
-          <div class="tile c7"></div>
-          <div class="tile d7"></div>
-          <div class="tile e7"></div>
-          <div class="tile f7"></div>
-          <div class="tile g7"></div>
-          <div class="tile h7"></div>
-          <div class="tile i7"></div>
-          <div class="tile j7"></div>
-          <div class="tile k7"></div>
-          <div class="tile l7"></div>
-          <div class="tile m7"></div>
-          <div class="tile n7"></div>
-          <div class="tile o7"></div>
-          <div class="tile p7"></div>
-          <div class="tile q7"></div>
-          <div class="tile r7"></div>
-          <div class="tile s7"></div>
-          <div class="tile t7"></div>
-          <div class="tile a8"></div>
-          <div class="tile b8"></div>
-          <div class="tile c8"></div>
-          <div class="tile d8"></div>
-          <div class="tile e8"></div>
-          <div class="tile f8"></div>
-          <div class="tile g8"></div>
-          <div class="tile h8"></div>
-          <div class="tile i8"></div>
-          <div class="tile j8"></div>
-          <div class="tile k8"></div>
-          <div class="tile l8"></div>
-          <div class="tile m8"></div>
-          <div class="tile n8"></div>
-          <div class="tile o8"></div>
-          <div class="tile p8"></div>
-          <div class="tile q8"></div>
-          <div class="tile r8"></div>
-          <div class="tile s8"></div>
-          <div class="tile t8"></div>
-          <div class="tile a9"></div>
-          <div class="tile b9"></div>
-          <div class="tile c9"></div>
-          <div class="tile d9"></div>
-          <div class="tile e9"></div>
-          <div class="tile f9"></div>
-          <div class="tile g9"></div>
-          <div class="tile h9"></div>
-          <div class="tile i9"></div>
-          <div class="tile j9"></div>
-          <div class="tile k9"></div>
-          <div class="tile l9"></div>
-          <div class="tile m9"></div>
-          <div class="tile n9"></div>
-          <div class="tile o9"></div>
-          <div class="tile p9"></div>
-          <div class="tile q9"></div>
-          <div class="tile r9"></div>
-          <div class="tile s9"></div>
-          <div class="tile t9"></div>
-          <div class="tile a10"></div>
-          <div class="tile b10"></div>
-          <div class="tile c10"></div>
-          <div class="tile d10"></div>
-          <div class="tile e10"></div>
-          <div class="tile f10"></div>
-          <div class="tile g10"></div>
-          <div class="tile h10"></div>
-          <div class="tile i10"></div>
-          <div class="tile j10"></div>
-          <div class="tile k10"></div>
-          <div class="tile l10"></div>
-          <div class="tile m10"></div>
-          <div class="tile n10"></div>
-          <div class="tile o10"></div>
-          <div class="tile p10"></div>
-          <div class="tile q10"></div>
-          <div class="tile r10"></div>
-          <div class="tile s10"></div>
-          <div class="tile t10"></div>
-        </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>I am a freelance web developer passionate about building things that are</br><i><strong>beautiful</strong></i> and <i><strong>functional</strong></i> out of nothing.</h2></br>
-                    <p class="lead">Are you looking for a new personal or portfolio website, or to spruce up one you already have?</br>Are you part of a company looking for an extra set of hands?</br>I want to work with you!</p>
-                    <p class="lead">My background in fine arts helps me bring flexible, creative thought and attention to detail to every project I work on.</br>Let's build something together today!</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="skills" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>SKILLS</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-code fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>HTML</strong>
-                                </h4>
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="icon-css fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>CSS</strong>
-                                </h4>
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="icon-javascript fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>JavaScript</strong>
-                                </h4>
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="icon-jquery fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>jQuery</strong>
-                                </h4>
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                      </div>
-                      <div class="row" id="center_align" data-id="resize_align">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="icon-ruby fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Ruby</strong>
-                                </h4>
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="icon-ruby-on-rails fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Rails</strong>
-                                </h4>
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="icon-mobile-device fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Responsive Design</strong>
-                                </h4>
-                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Callout -->
-    <!-- <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Cool CSS Animation Here</h1>
-        </div>
-    </aside> -->
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Recent Work</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                          <!-- <h2>Dolly's</h2> -->
-                            <div class="portfolio-item">
-                                <a href="https://davidsonayres.github.io/dollys/" target="_blank">
-                                    <img class="img-portfolio img-responsive" src="img/dollys.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                           <!-- <h2>Sunshine Wholesome Market</h2> -->
-                            <div class="portfolio-item">
-                                <a href="https://davidsonayres.github.io/sunshine/" target="_blank">
-                                    <img class="img-portfolio img-responsive" src="img/sunshine.png">
-                                </a>
-                            </div>
-                        </div>
-                        <h2 style="line-height:3;margin-bottom:-25px;">Personal Projects</h2>
-                        <hr class="small">
-                        <div class="col-md-6">
-                          <!-- <h2>wellRead</h2> -->
-                            <div class="portfolio-item">
-                                <a href="http://well-read.herokuapp.com" target="_blank">
-                                    <img class="img-portfolio img-responsive" src="img/wellread.png">
-                                </a>
-                                <p>* Built for mobile use</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                          <!-- <h2>Kissy</h2> -->
-                            <div class="portfolio-item">
-                                <a href="http://kissyapp.herokuapp.com" target="_blank">
-                                    <img class="img-portfolio img-responsive" src="img/kissy.png">
-                                </a>
-                            </div>
-                        </div>
-                    <!-- /.row (nested) -->
-                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Call to Action -->
-    <!-- <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
-            </div>
-        </div>
-    </aside> -->
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <!-- <section id="services" class="services">
-        <div class="container"> -->
-
-            <!-- /.row -->
-        <!-- </div> -->
-        <!-- /.container -->
-    <!-- </section> -->
-
-    <!-- Map -->
-    <!-- <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-    </section> -->
-
-    <!-- Footer -->
-
-    <footer id="contact">
-        <div class="container">
-          <div class="row text-center">
-              <div class="col-lg-10 col-lg-offset-1">
-                  <div class="row" id="center_align" data-id="resize_align">
-                      <div class="col-md-3 col-sm-6">
-                          <div class="service-item">
-                            <a href="http://www.github.com/davidsonayres" target="_blank" id="contact_link">
-                              <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x"></i>
-                              <i class="fa fa-github fa-stack-1x text-primary"></i>
-                          </span>
-                              <h4>
-                                  <strong>github</strong>
-                              </h4></a>
-                          </div>
-                      </div>
-                      <div class="col-md-3 col-sm-6">
-                          <div class="service-item">
-                            <a href="http://www.linkedin.com/in/davidsonayres" target="_blank" id="contact_link">
-                              <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x"></i>
-                              <i class="fa fa-linkedin fa-stack-1x text-primary"></i>
-                          </span>
-                              <h4>
-                                  <strong>Linkedin</strong>
-                              </h4></a>
-                          </div>
-                      </div>
-                      <div class="col-md-3 col-sm-6">
-                          <div class="service-item">
-                            <a href="img/resume.pdf" target="_blank" id="contact_link">
-                              <span class="fa-stack fa-4x">
-                              <i class="fa fa-circle fa-stack-2x"></i>
-                              <i class="fa fa-file-text-o fa-stack-1x text-primary"></i>
-                          </span>
-                              <h4>
-                                  <strong>Resume</strong>
-                              </h4></a>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- /.row (nested) -->
-              </div>
-              <!-- /.col-lg-10 -->
-          </div>
-          <hr class="small">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>MICHAEL DAVIDSON</strong>
-                    </h4>
-                    <p>Toronto, ON</p>
-                    <ul class="list-unstyled">
-                        <!-- <li><i class="fa fa-phone fa-fw"></i> (416) 456-7890</li> -->
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:mjames.ayres@gmail.com">mjames.ayres@gmail.com</a>
-                        </li>
-                    </ul>
-                    <!-- <br> -->
-                    <!-- <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul> -->
-                    <!-- <hr class="small"> -->
-                    <!-- <p class="text-muted">Copyright &copy; Michael Davidson 2017</p> -->
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+      <div id="footer-2">
+        <a href="contact.html"><h2>CONTACT</h2></a>
+      </div>
+      <div id="footer-3">
+      </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+      $(document).ready(function(){
+        $('#title').fadeIn(1000).removeClass('hidden');
+      });
 
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
+      $('#divider-live').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+        console.log('finished!')
+        $('#divider-live').css('margin', '1% 10vw');
+        $('#divider-live').css('animation-delay', '0');
+      });
+
+      $('#title').mouseenter(function() {
+        console.log('working!');
+        $('#divider-live').css('animation-delay', '0s');
+        $('#divider-live').css('animation-name', 'flyout');
+        $('#divider-live').css('animation-play-state', 'running');
+        setTimeout(function() {
+          $('#title').fadeOut(1000);
+        }, 10);
+
+        $('#divider-live').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+          console.log('finished again!')
+          $('#divider-live').css('margin', '1% -120vw');
+          $('#divider-live').css('animation-name', 'flyin2');
+          $('#divider-live').css('animation-duration', '1.15s');
+          $('#divider-live').css('animation-play-state', 'running');
+          $('#divider-live').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+            $('#divider-live').css('margin', '1% 0vw');
+            $('#divider-live').attr('id', 'divider-moved');
+          });
         });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
 
-    // Adjusting display of centre aligned skills on resize
-    window.addEventListener('resize', function(e) {
-      console.log(window.innerWidth);
-      var width = window.innerWidth;
-      const x = $('div[data-id="resize_align"]');
-      if (width <= 767) {
-        x.removeAttr('id');
-      } else {
-        x.attr('id', 'center_align');
-      };
-    })
+        $('#title').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+          console.log('we finished.');
+          setTimeout(function() {
+            $('#title').css('margin-top', '12%');
+            $('#title').css('padding-left', '25%');
+            $('#title').css('text-align', 'left');
+            $('#title h1').css('font-size', '2.75em');
+            $('#title h2').css('font-size', '2em');
+            $('#title').fadeIn(1000);
+          }, 200);
+          setTimeout(function() {
+            $('#title').attr('id', 'title-moved');
+            $('nav').slideDown(500).removeClass('hidden');
+          }, 1000);
+          $('footer').fadeIn(1000).removeClass('hidden');
+        });
+
+      });
+
     </script>
 
-</body>
-
+  </body>
 </html>
